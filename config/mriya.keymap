@@ -20,7 +20,17 @@
 &mt {
     quick_tap_ms = <200>;
 };
+/ {
+    combos {
+        compatible = "zmk,combos";
 
+        ParaLeft {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <4 5>;
+            timeout-ms = <20>;
+        };
+    };
+};
 / {
     keymap {
         compatible = "zmk,keymap";
